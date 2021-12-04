@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#F8F8A0"
+    android:background="@color/white"
+    tools:context=".NguoiDung">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_header_user"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:backgroundTint="#F8F8A0">
+
+        <ImageView
+            android:id="@+id/image_header_logo_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/logo_shop" />
+
+        <TextView
+            android:id="@+id/txt_header_ten_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="70dp"
+            android:text="Tấn minh"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_header_chinhsua_user"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/boder_4"
+            android:backgroundTint="#F8F8A0"
+            android:text="Chỉnh sữa" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_center_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="220dp"
+        android:backgroundTint="#F8F8A0">
+
+        <Button
+            android:id="@+id/btn_center_lichsumuahang_user"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/boder_3"
+            android:drawableRight="@drawable/back3"
+            android:text="Lịch sử mua hàng"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_center_donggop_user"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/boder_3"
+            android:drawableRight="@drawable/back3"
+            android:text="Đóng góp ý kiến"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_center_trungtantg_user"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/boder_3"
+            android:drawableRight="@drawable/back3"
+            android:text="Trung tâm trợ giúp"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btn_center_doimatkhau_user"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="175dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/boder_3"
+            android:drawableRight="@drawable/back3"
+            android:text="Đổi mật khẩu"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+
+            />
+
+        <Button
+            android:id="@+id/btn_center_dăngxuat_user"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/boder_3"
+            android:drawableRight="@drawable/back3"
+            android:text="Đăng xuất"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@color/color_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

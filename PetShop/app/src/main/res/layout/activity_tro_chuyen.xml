@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_sp"
+    tools:context=".TroChuyen"
+    android:background="#F3F3D0"
+    android:layout_weight="10"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/hinhlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo_shop"
+        android:layout_gravity="center"/>
+ <RelativeLayout
+     android:paddingTop="400dp"
+     android:layout_width="match_parent"
+     android:layout_height="0px"
+     android:layout_weight="9.2">
+
+
+     <ImageView
+         android:id="@+id/hinhicon"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/anhcho" />
+
+     <TextView
+         android:id="@+id/txtchat1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_margin="10dp"
+         android:layout_toRightOf="@id/hinhicon"
+         android:background="@drawable/botron_mautrang"
+         android:text="Chào bạn PETSHOP có thể giúp gì cho bạn"
+         android:textSize="20sp" />
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/txtchat1"
+         android:layout_alignParentRight="true"
+         android:paddingTop="15dp"
+         android:background="@drawable/botron_mautrang"
+         android:text="                                                   "
+         android:textSize="20sp" />
+
+ </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_weight="0.8"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@color/color_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:background="#fff"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+</LinearLayout>

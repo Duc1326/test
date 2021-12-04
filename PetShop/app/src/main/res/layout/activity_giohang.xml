@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_giohang"
+    tools:context=".GioHang"
+    android:background="#F8F8A0"
+    android:layout_weight="10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:background="#F8F8A0"
+        android:layout_weight="0.8">
+        <EditText
+
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/edtexttim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tìm kiếm"
+            android:textSize="14sp"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/black"
+            android:background="@drawable/botext"
+            android:drawableRight="@drawable/iconseach"
+            android:layout_alignParentTop="true"/>
+    </LinearLayout>
+
+    <TextView
+    android:paddingLeft="10dp"
+    android:layout_weight="0.1"
+        android:background="#F8F8A0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text=">Giỏ Hàng"
+    android:textSize="17sp"/>
+    <ListView
+        android:layout_weight="7.6"
+        android:id="@+id/lvSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_above="@id/bottom_navigation"
+        android:background="#F8F8A0">
+
+
+    </ListView>
+    <RelativeLayout
+        android:layout_weight="0.6"
+        android:layout_width="wrap_content"
+        android:layout_height="0px"
+        android:orientation="horizontal"
+        android:backgroundTint="#F8F8A0"
+        android:background="@drawable/bovienvuong">
+        <CheckBox
+            android:layout_centerVertical="true"
+            android:id="@+id/cbtatca"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:id="@+id/txttaca"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/cbtatca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tất cả"/>
+        <TextView
+            android:layout_toRightOf="@id/txttaca"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#AF3E3E"
+            android:text="1.900.000"
+            android:textSize="18dp"/>
+
+        <Button
+            android:id="@+id/btthanhtoan"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Thanh Toán"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:background="@drawable/botrovien"/>
+
+    </RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_weight="0.8"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@color/color_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bodong">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imHinh"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/cho1" />
+
+        <TextView
+            android:id="@+id/textmota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_toRightOf="@id/imHinh"
+            android:text="mo ta"
+            android:textSize="16dp" />
+
+
+        <Button
+            android:id="@+id/xem"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/textmota"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/imHinh"
+            android:background="@drawable/botrovien"
+            android:text="xem chi tiết"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>
